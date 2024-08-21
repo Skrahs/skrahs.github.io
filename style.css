@@ -17,8 +17,25 @@ body {
     animation: backgroundColorChange 20s infinite alternate; 
 }
 
+/* Stili per il video di sfondo */
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    filter: brightness(0.5); 
+}
+
 .container {
     text-align: center;
+    position: relative;
+    z-index: 1;
     animation: containerFloat 10s infinite alternate ease-in-out;
 }
 
@@ -26,7 +43,7 @@ body {
 .logo .s {
     font-family: 'Ancient', serif;
     font-size: 80px;
-    color: #4c4c4c;
+    color: #01afff;
     animation: rotateLogo 20s linear infinite, logoPulse 5s infinite alternate ease-in-out;
 }
 
